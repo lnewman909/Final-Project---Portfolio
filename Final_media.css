@@ -15,21 +15,7 @@
    article img {
       display: none; 
    }
-   ul.submenu {
-      text-align:center;
-   }
 }
-
-@media (min-width: 501px)  {
-   nav {
-      float: left;
-      width: 130px;
-      margin: 30px 25px 0px 0px;
-      height: 400px
-   }
-}
-
-@media (min-width: 710px) {
 
    nav {
       float: none;
@@ -45,8 +31,23 @@
 
    }
 
+   /*adjust the width of the text in the NAV lis*/
    ul.mainmenu > li {
-
       flex: 0 1 120px; 
    }
+   
+   /* Marquee Styles */
+nav a:hover {
+   color: rgb(255, 33, 25);
+   text-shadow: rgba(0, 0, 0, 0.1) 0px 15px 4px;
+   transform: scale(2,2) translateY(-15px)
+}
+
+nav a {
+
+   color: rgb(255, 255, 255);
+   text-shadow: rgba(0, 0, 0, 1) 1px -1px 1px; 
+   transform: scale(1,1) translate(0px);
+   transition: all 1.2s linear;
+
 }

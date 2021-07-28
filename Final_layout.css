@@ -8,14 +8,33 @@
    Filename: code5-1_layout.css
 
 */
-html {
-   width: 100%;
+
+
+
+img#Logoimg {
+   height: 150px; 
+   width: 150px; 
+   max-width: 150px; 
+   max-height: 150px;
 }
 
+img#Logoimg {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+ }
+
+html {
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.356);
+}
+
+/*adjust the width of the page*/
 body {
-   min-width: 350px;
-   max-width: 900px;
-   width: 95%;
+   min-width: auto;
+   max-width: auto;
+   width: 90%;
    margin: 0px auto;
 }
 
@@ -23,15 +42,12 @@ a {
    text-decoration: none;
 }
 
-header img {
-   display: block;
-   width: 100%;
-}
 
 nav {
    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
    background-color: rgb(2,87,90);
 }
+
 nav h1 {
    font-size: 0.8em;
    text-transform: uppercase;
@@ -57,18 +73,6 @@ nav ul.mainmenu > li {
    padding-bottom: 10px;
 }
 
-nav ul.submenu li {
-   font-size: 0.75em;
-}
-
-nav.ul.submenu li:last-of-type {
-   padding-bottom: 20px;
-}
-
-
-ul.submenu li {
-   margin-left: 10px;
-}
 
 nav a {
    color: white;
@@ -84,10 +88,10 @@ article h1 {
 }
 
 article img {
-   display: block;
+   display: flex;
    float: right;
    margin: 0px 10px 20px 20px;
-   width: 40%;
+   width: 30%;
 }
 
 article p {
@@ -96,6 +100,21 @@ article p {
 }
 
 article p:last-of-type {
-   text-align: right;
-   clear: right;
+   text-align: left;
+   clear: left;
+}
+
+footer img {
+   height: 50px;
+   width: 50px;
+
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem;
+   align-content: center;
+   text-align: center;
 }
