@@ -15,6 +15,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <link rel="stylesheet" href="Final_layout.css" />
    <link rel="stylesheet" href="Final_media.css" />
+   <link rel="stylesheet" href="event_table.css"/>
+   <script src="hiking_list.js" defer></script>
+   <script src="event_table.js" defer></script>
+
 </head>
 
 
@@ -33,8 +37,10 @@
    
    <article>
       <h1>About Me</h1>
-      <img src="Profile Pic.jpeg" alt="photo" />
-      <p>Hi Everyone! 
+      <img id="me" src="Profile Pic.jpeg" alt="photo" />
+      <p id="about_me">
+         <br>
+         Hi Everyone! 
          <br>
          <br>
          My name is Leonard Newman 
@@ -42,9 +48,16 @@
          I have worked so hard to put this Portfolio together 
          and I am extremely thankful for you taking the time to view it.
          I am currently taking courses at Pasadena City College to enhance my programming skills 
-         which I am hoping this page gives that justice.  </p>
+         which I am hoping this page gives that justice.
+         <br>
+         <br>
+         Anywho. If you ever want to join me on a hike, please see below for my next hiking opportunity.
+      </p>
    </article>
-   
+
+   <div id="eventList"></div>
+   <p id="datetest"></p>
+
    <div>
       <footer id='end'>
          <hr />

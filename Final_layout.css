@@ -32,8 +32,8 @@ html {
 
 /*adjust the width of the page*/
 body {
-   min-width: auto;
-   max-width: auto;
+   min-width: 90%;
+   max-width: 90%;
    width: 90%;
    margin: 0px auto;
 }
@@ -88,21 +88,23 @@ article h1 {
 }
 
 article img#Profile {
-   display: flex;
+   display: block;
    float: left;
    margin: 0px 10px 20px 20px;
-   width: 30%;
+   width: 20%;
 }
 
-article img {
-   display: flex;
+img#me {
+   display: block;
    float: right;
    margin: 0px 10px 20px 20px;
    width: 30%;
 }
 
+
 section img {
-   width: 200px;
+   width: 350px;
+   height:250px ;
    display: block;
    margin: 0px auto;
    border: 1px solid gray;
@@ -116,13 +118,13 @@ footer#Pic {
 }
 
 div#projects section {
-   width: 240px;
-   height: 200px;
+   width: 400px;
+   height: 300px;
    text-align: left;
    background: rgb(231, 231, 231);
    box-shadow: inset 0px 0px 20px black;
    padding-top: 20px;
-   float: right;
+   float: left;
    box-sizing: border-box;
    margin: 5px;
    position: block;
@@ -148,6 +150,7 @@ article p:last-of-type {
 
 
 footer#end {
+   clear: both;
    position: relative;
    bottom: 0;
    width: 100%;
@@ -162,4 +165,18 @@ img#mail {
    position: relative;
    float: inline-end;
 
+}
+
+p#about_me{
+   clear: none;
+}
+
+section img:hover {
+   transform: scale(1.58,2) translateY(-15px);
+}
+
+div#eventList {
+   -webkit-flex: 1 1 350px;
+   flex: 1 1 350px;   
+   margin: 20px;
 }
