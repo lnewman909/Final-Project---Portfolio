@@ -27,7 +27,7 @@ img#Logoimg {
 
 html {
    width: 100%;
-   background-color: rgba(0, 0, 0, 0.356);
+   background-color: rgba(240, 235, 235, 0.356);
 }
 
 /*adjust the width of the page*/
@@ -57,6 +57,24 @@ nav h1 {
    background-color: rgb(50,50,50);
    color: white;
 }
+
+
+h2 {
+   font-size: 0.8em;
+   text-transform: uppercase;
+   letter-spacing: 0.3em;
+   text-align: center;
+   margin: 0 0 10px 0;
+   background-color: rgb(50,50,50);
+   color: white;
+}
+
+ul.columns {
+   columns: 2;
+   -webkit-columns: 2;
+   -moz-columns: 2;
+}
+
 nav li {
    list-style: none;
    line-height: 1.2em;

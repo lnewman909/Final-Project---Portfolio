@@ -51,3 +51,15 @@ nav a {
    transition: all 1.2s linear;
 
 }
+
+.certificates {
+   display: none;
+   padding: 0;
+}
+
+a:hover + .certificates,.certificates:hover{
+   display: block;
+   position: absolute;
+   z-index: 100;
+}
+
