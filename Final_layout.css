@@ -114,9 +114,11 @@ article img#Profile {
 
 img#me {
    display: block;
-   float: right;
+   position: relative;
    margin: 0px 10px 20px 20px;
-   width: 30%;
+   max-width: 100%;
+   height: auto;
+   float: right;
 }
 
 
